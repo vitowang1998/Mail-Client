@@ -1,8 +1,18 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ * ® Copyright 2017 Haoran Wang. All rights reserved.
+ *  
+ * The works in this project are licenced under a 
+ * Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported 
+ * (CC BY-NC-SA 3.0) Licence.
+ * 
+ * That is to say, you may freely modify the work, quote the content of the work, 
+ * and use it for other purposes, as long as it's non-commercial. 
+ * If you want to distribute the work, you need to give appropriate credit and make 
+ * sure it is under the same licence as the original, 
+ * in this case, a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0) Licence should be applied.
  */
+
+
 package haoran.wang.mailClient;
 
 /**
@@ -62,11 +72,6 @@ public class StartGUI extends javax.swing.JFrame {
 
         jButton1.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
         jButton1.setText("Check Email");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
 
         newEmailJButtonStartGUI.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
         newEmailJButtonStartGUI.setText("New Email");
@@ -78,6 +83,11 @@ public class StartGUI extends javax.swing.JFrame {
 
         jButton3.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
         jButton3.setText("Manage My Account");
+        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton3MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -91,7 +101,7 @@ public class StartGUI extends javax.swing.JFrame {
                         .addGap(241, 241, 241)
                         .addComponent(jLabel2))
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(166, Short.MAX_VALUE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(titileJLabelStartGUI)))
                 .addGap(167, 167, 167))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -132,10 +142,6 @@ public class StartGUI extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_aboutJButtonStartGUIActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
         System.out.println("hello");
     }//GEN-LAST:event_formWindowClosing
@@ -147,6 +153,11 @@ public class StartGUI extends javax.swing.JFrame {
         // Close this GUI
         this.dispose();
     }//GEN-LAST:event_newEmailJButtonStartGUIMouseClicked
+
+    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+        new ManageGUI().setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton3MouseClicked
 
     /**
      * @param args the command line arguments
