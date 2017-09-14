@@ -11,8 +11,6 @@
  * sure it is under the same licence as the original, 
  * in this case, a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0) Licence should be applied.
  */
-
-
 package haoran.wang.mailClient;
 
 /**

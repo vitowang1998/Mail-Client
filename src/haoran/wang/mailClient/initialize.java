@@ -1,6 +1,6 @@
 /*
  * ® Copyright 2017 Haoran Wang. All rights reserved.
- *  
+ * 
  * The works in this project are licenced under a 
  * Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported 
  * (CC BY-NC-SA 3.0) Licence.
@@ -11,12 +11,12 @@
  * sure it is under the same licence as the original, 
  * in this case, a Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported (CC BY-NC-SA 3.0) Licence should be applied.
  */
-
-
 package haoran.wang.mailClient;
 
-
-
+/**
+ *
+ * @author HaoranWang
+ */
 public class initialize {
     
     boolean checkData(){

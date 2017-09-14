@@ -17,6 +17,43 @@ package haoran.wang.mailClient;
  *
  * @author HaoranWang
  */
-public class data {
+public class data 
+{
+    // Instance Variables
+    // Encapsulation
+    private String userName;
+    private String password;
+    private String type;
     
+    // Setters
+    public void setName(String userName)
+    {
+        this.userName = userName;
+    }
+    
+    public void setPassword(String password)
+    {
+        this.password = password;
+    }
+    
+    public void setType(String type)
+    {
+        this.type = type;
+    }
+    
+    // Getters
+    public String getName()
+    {
+        return userName;
+    }
+    
+    public String getPassword()
+    {
+        return password;
+    }
+    
+    public String type()
+    {
+        return type;
+    }
 }
