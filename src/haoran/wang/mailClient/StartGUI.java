@@ -13,6 +13,8 @@
  */
 package haoran.wang.mailClient;
 
+import javax.swing.JLabel;
+
 /**
  *
  * @author HaoranWang
@@ -37,8 +39,7 @@ public class StartGUI extends javax.swing.JFrame {
 
         titileJLabelStartGUI = new javax.swing.JLabel();
         aboutJButtonStartGUI = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        welcomeJLabelStartGUI = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         newEmailJButtonStartGUI = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -65,8 +66,8 @@ public class StartGUI extends javax.swing.JFrame {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
-        jLabel1.setText("Welcome, ");
+        welcomeJLabelStartGUI.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
+        welcomeJLabelStartGUI.setText("Welcome to your email client.");
 
         jButton1.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
         jButton1.setText("Check Email");
@@ -91,28 +92,26 @@ public class StartGUI extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(80, 80, 80)
-                        .addComponent(jLabel1)
-                        .addGap(241, 241, 241)
-                        .addComponent(jLabel2))
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(titileJLabelStartGUI)))
-                .addGap(167, 167, 167))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addGap(26, 26, 26)
+                .addComponent(jButton3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(newEmailJButtonStartGUI, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(45, 45, 45))
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(aboutJButtonStartGUI)
-                    .addComponent(jButton3))
+                .addComponent(aboutJButtonStartGUI)
                 .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(titileJLabelStartGUI)
+                        .addGap(167, 167, 167))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(welcomeJLabelStartGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 411, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(91, 91, 91))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -121,15 +120,17 @@ public class StartGUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
                 .addComponent(titileJLabelStartGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(57, 57, 57)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addComponent(welcomeJLabelStartGUI)
                 .addGap(60, 60, 60)
                 .addComponent(jButton1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(newEmailJButtonStartGUI)
-                .addGap(26, 26, 26)
-                .addComponent(jButton3))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(newEmailJButtonStartGUI)
+                        .addGap(64, 64, 64))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jButton3)
+                        .addGap(50, 50, 50))))
         );
 
         pack();
@@ -196,9 +197,8 @@ public class StartGUI extends javax.swing.JFrame {
     private javax.swing.JButton aboutJButtonStartGUI;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton3;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JButton newEmailJButtonStartGUI;
     private javax.swing.JLabel titileJLabelStartGUI;
+    private javax.swing.JLabel welcomeJLabelStartGUI;
     // End of variables declaration//GEN-END:variables
 }

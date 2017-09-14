@@ -33,15 +33,20 @@ public class SendGUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jComboBox1 = new javax.swing.JComboBox<>();
         toJLableSendGUI = new javax.swing.JLabel();
         toJFieldSendGUI = new javax.swing.JTextField();
         subjectJLableSendGUI = new javax.swing.JLabel();
-        subjectJFieldSendGUI = new javax.swing.JTextField();
         messageJLabelSendGUI = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         messageJTextFieldSendGUI = new javax.swing.JTextArea();
         returnJButtonSendGUI = new javax.swing.JButton();
         sendJButtonSendGUI = new javax.swing.JButton();
+        fromJLabelSendGUI = new javax.swing.JLabel();
+        subjectJFieldSendGUI = new javax.swing.JTextField();
+        emailJComboSendGUI = new javax.swing.JComboBox<>();
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(630, 450));
@@ -53,8 +58,6 @@ public class SendGUI extends javax.swing.JFrame {
 
         subjectJLableSendGUI.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         subjectJLableSendGUI.setText("Subject");
-
-        subjectJFieldSendGUI.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
 
         messageJLabelSendGUI.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         messageJLabelSendGUI.setText("Message");
@@ -80,23 +83,34 @@ public class SendGUI extends javax.swing.JFrame {
             }
         });
 
+        fromJLabelSendGUI.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        fromJLabelSendGUI.setText("From:");
+
+        subjectJFieldSendGUI.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+
+        emailJComboSendGUI.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        emailJComboSendGUI.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(21, 21, 21)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(returnJButtonSendGUI)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(sendJButtonSendGUI))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 564, Short.MAX_VALUE)
-                    .addComponent(messageJLabelSendGUI)
-                    .addComponent(subjectJLableSendGUI)
-                    .addComponent(toJLableSendGUI)
-                    .addComponent(toJFieldSendGUI, javax.swing.GroupLayout.DEFAULT_SIZE, 564, Short.MAX_VALUE)
-                    .addComponent(subjectJFieldSendGUI))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(emailJComboSendGUI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(fromJLabelSendGUI)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(returnJButtonSendGUI)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(sendJButtonSendGUI))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 564, Short.MAX_VALUE)
+                        .addComponent(messageJLabelSendGUI)
+                        .addComponent(subjectJLableSendGUI)
+                        .addComponent(toJLableSendGUI)
+                        .addComponent(toJFieldSendGUI, javax.swing.GroupLayout.DEFAULT_SIZE, 564, Short.MAX_VALUE)
+                        .addComponent(subjectJFieldSendGUI)))
                 .addContainerGap(45, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -107,6 +121,10 @@ public class SendGUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(toJFieldSendGUI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(fromJLabelSendGUI)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(emailJComboSendGUI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(subjectJLableSendGUI)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(subjectJFieldSendGUI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -118,7 +136,7 @@ public class SendGUI extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(returnJButtonSendGUI)
                     .addComponent(sendJButtonSendGUI))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
         pack();
@@ -171,6 +189,9 @@ public class SendGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox<String> emailJComboSendGUI;
+    private javax.swing.JLabel fromJLabelSendGUI;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel messageJLabelSendGUI;
     private javax.swing.JTextArea messageJTextFieldSendGUI;

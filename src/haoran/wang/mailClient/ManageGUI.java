@@ -39,7 +39,7 @@ public class ManageGUI extends javax.swing.JFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jComboBox1 = new javax.swing.JComboBox<>();
-        jButton1 = new javax.swing.JButton();
+        addJButtonManageGUI = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
@@ -54,13 +54,14 @@ public class ManageGUI extends javax.swing.JFrame {
         jLabel1.setText("Manage Your Accounts");
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+
+        addJButtonManageGUI.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        addJButtonManageGUI.setText("Add");
+        addJButtonManageGUI.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                addJButtonManageGUIKeyPressed(evt);
             }
         });
-
-        jButton1.setText("jButton1");
 
         jButton2.setText("jButton2");
 
@@ -81,7 +82,7 @@ public class ManageGUI extends javax.swing.JFrame {
                         .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 183, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(131, 131, 131)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1)
+                            .addComponent(addJButtonManageGUI)
                             .addComponent(jButton2)
                             .addComponent(jButton3)
                             .addComponent(jButton4)))
@@ -100,7 +101,7 @@ public class ManageGUI extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(82, 82, 82)
-                        .addComponent(jButton1)
+                        .addComponent(addJButtonManageGUI)
                         .addGap(18, 18, 18)
                         .addComponent(jButton2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -118,9 +119,9 @@ public class ManageGUI extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    private void addJButtonManageGUIKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_addJButtonManageGUIKeyPressed
+        // Open a new GUI to add
+    }//GEN-LAST:event_addJButtonManageGUIKeyPressed
 
     /**
      * @param args the command line arguments
@@ -158,7 +159,7 @@ public class ManageGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton addJButtonManageGUI;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
