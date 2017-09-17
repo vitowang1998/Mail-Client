@@ -2,6 +2,13 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/Users/HaoranWang/Documents/GitHub/Mail%20Client/src/haoran/wang/mailClient/initialize.java</file>
+            <file>file:/Users/HaoranWang/Documents/GitHub/Mail%20Client/src/haoran/wang/mailClient/close.java</file>
+            <file>file:/Users/HaoranWang/Documents/GitHub/Mail%20Client/src/haoran/wang/mailClient/SendGUI.java</file>
+            <file>file:/Users/HaoranWang/Documents/GitHub/Mail%20Client/src/haoran/wang/mailClient/addGUI.java</file>
+            <file>file:/Users/HaoranWang/Documents/GitHub/Mail%20Client/src/haoran/wang/mailClient/data.java</file>
+            <file>file:/Users/HaoranWang/Documents/GitHub/Mail%20Client/src/haoran/wang/mailClient/ManageGUI.java</file>
+        </group>
     </open-files>
 </project-private>

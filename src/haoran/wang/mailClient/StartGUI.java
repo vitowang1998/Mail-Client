@@ -42,7 +42,7 @@ public class StartGUI extends javax.swing.JFrame {
         welcomeJLabelStartGUI = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         newEmailJButtonStartGUI = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        manageStartGUI = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
@@ -60,11 +60,6 @@ public class StartGUI extends javax.swing.JFrame {
 
         aboutJButtonStartGUI.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
         aboutJButtonStartGUI.setText("About");
-        aboutJButtonStartGUI.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                aboutJButtonStartGUIActionPerformed(evt);
-            }
-        });
 
         welcomeJLabelStartGUI.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
         welcomeJLabelStartGUI.setText("Welcome to your email client.");
@@ -80,11 +75,11 @@ public class StartGUI extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
-        jButton3.setText("Manage My Account");
-        jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
+        manageStartGUI.setFont(new java.awt.Font("Lucida Grande", 0, 24)); // NOI18N
+        manageStartGUI.setText("Manage My Account");
+        manageStartGUI.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton3MouseClicked(evt);
+                manageStartGUIMouseClicked(evt);
             }
         });
 
@@ -94,7 +89,7 @@ public class StartGUI extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(26, 26, 26)
-                .addComponent(jButton3)
+                .addComponent(manageStartGUI)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 72, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -129,17 +124,13 @@ public class StartGUI extends javax.swing.JFrame {
                         .addComponent(newEmailJButtonStartGUI)
                         .addGap(64, 64, 64))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jButton3)
+                        .addComponent(manageStartGUI)
                         .addGap(50, 50, 50))))
         );
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void aboutJButtonStartGUIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aboutJButtonStartGUIActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_aboutJButtonStartGUIActionPerformed
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
         System.out.println("hello");
@@ -153,10 +144,10 @@ public class StartGUI extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_newEmailJButtonStartGUIMouseClicked
 
-    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+    private void manageStartGUIMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_manageStartGUIMouseClicked
         new ManageGUI().setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_jButton3MouseClicked
+    }//GEN-LAST:event_manageStartGUIMouseClicked
 
     /**
      * @param args the command line arguments
@@ -196,7 +187,7 @@ public class StartGUI extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton aboutJButtonStartGUI;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton manageStartGUI;
     private javax.swing.JButton newEmailJButtonStartGUI;
     private javax.swing.JLabel titileJLabelStartGUI;
     private javax.swing.JLabel welcomeJLabelStartGUI;
