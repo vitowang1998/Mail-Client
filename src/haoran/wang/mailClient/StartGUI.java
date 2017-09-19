@@ -139,14 +139,7 @@ public class StartGUI extends javax.swing.JFrame {
     
     // Start a new sendGUI if the user presses the "New Email" button
     private void newEmailJButtonStartGUIMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_newEmailJButtonStartGUIMouseClicked
-        Component frame = null;
-      
-JOptionPane.showInternalMessageDialog(frame, "information","information", JOptionPane.INFORMATION_MESSAGE);           
-
-
-
-
-// Create the sendGUI GUI
+        // Create the sendGUI GUI
         new SendGUI().setVisible(true);
         // Close this GUI
         this.dispose();
