@@ -13,6 +13,8 @@
  */
 package haoran.wang.mailClient;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author HaoranWang
@@ -24,6 +26,11 @@ public class data
     private String userName;
     private String password;
     private String type;
+
+    public data() {
+        this.Data = new ArrayList<data>();
+        this.Data = new ArrayList<data>();
+    }
     
     // Setters
     public void setName(String userName)
@@ -55,5 +62,11 @@ public class data
     public String type()
     {
         return type;
-    }
+    }   
+    
+    ArrayList Data;
+    
+    
+    
+    
 }

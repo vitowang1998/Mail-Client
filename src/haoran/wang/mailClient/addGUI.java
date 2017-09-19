@@ -35,20 +35,52 @@ public class addGUI extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        titleJLabelAddGUI = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        addressJTextFieldAddingGUI = new javax.swing.JTextField();
+        jLabel2 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jPasswordField1 = new javax.swing.JPasswordField();
+        typeJComboBoxAddGUI = new javax.swing.JComboBox<>();
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
-        );
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMinimumSize(new java.awt.Dimension(607, 450));
+        setResizable(false);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        titleJLabelAddGUI.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
+        titleJLabelAddGUI.setText("Add an Email");
+        getContentPane().add(titleJLabelAddGUI, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 50, -1, -1));
+
+        jLabel1.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabel1.setText("Email Address:");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
+
+        addressJTextFieldAddingGUI.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        getContentPane().add(addressJTextFieldAddingGUI, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 570, 40));
+
+        jLabel2.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabel2.setText("Password:");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, -1, -1));
+
+        jButton1.setText("jButton1");
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, -1, -1));
+
+        jLabel3.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        jLabel3.setText("Type:");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, -1, -1));
+
+        jPasswordField1.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        getContentPane().add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, 570, 40));
+
+        typeJComboBoxAddGUI.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        typeJComboBoxAddGUI.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Gmail", "Yahoo", "Sina", "Foxmail" }));
+        typeJComboBoxAddGUI.setToolTipText("Email");
+        getContentPane().add(typeJComboBoxAddGUI, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, -1, -1));
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     /**
@@ -87,5 +119,13 @@ public class addGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField addressJTextFieldAddingGUI;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JPasswordField jPasswordField1;
+    private javax.swing.JLabel titleJLabelAddGUI;
+    private javax.swing.JComboBox<String> typeJComboBoxAddGUI;
     // End of variables declaration//GEN-END:variables
 }

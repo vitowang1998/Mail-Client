@@ -26,7 +26,7 @@ public class initialize {
         return false;
     }
     
-    
+    int numberOfEmails;
     
     
     // Constructor

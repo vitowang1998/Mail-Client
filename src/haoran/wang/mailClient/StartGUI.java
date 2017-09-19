@@ -13,8 +13,6 @@
  */
 package haoran.wang.mailClient;
 
-import java.awt.Component;
-import javax.swing.JOptionPane;
 
 /**
  *
@@ -50,11 +48,6 @@ public class StartGUI extends javax.swing.JFrame {
         setMaximumSize(new java.awt.Dimension(630, 450));
         setMinimumSize(new java.awt.Dimension(630, 450));
         setResizable(false);
-        addWindowListener(new java.awt.event.WindowAdapter() {
-            public void windowClosing(java.awt.event.WindowEvent evt) {
-                formWindowClosing(evt);
-            }
-        });
 
         titileJLabelStartGUI.setFont(new java.awt.Font("Lucida Grande", 1, 48)); // NOI18N
         titileJLabelStartGUI.setText("Email Client");
@@ -132,10 +125,6 @@ public class StartGUI extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
-        System.out.println("hello");
-    }//GEN-LAST:event_formWindowClosing
     
     // Start a new sendGUI if the user presses the "New Email" button
     private void newEmailJButtonStartGUIMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_newEmailJButtonStartGUIMouseClicked
