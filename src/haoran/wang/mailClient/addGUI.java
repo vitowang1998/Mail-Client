@@ -36,11 +36,11 @@ public class addGUI extends javax.swing.JFrame {
     private void initComponents() {
 
         titleJLabelAddGUI = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        addressAddGUI = new javax.swing.JLabel();
         addressJTextFieldAddingGUI = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
+        passwordJLabelAddGUI = new javax.swing.JLabel();
+        saveJButtonAddGUI = new javax.swing.JButton();
+        typeJLabelAddGUI = new javax.swing.JLabel();
         jPasswordField1 = new javax.swing.JPasswordField();
         typeJComboBoxAddGUI = new javax.swing.JComboBox<>();
 
@@ -53,23 +53,24 @@ public class addGUI extends javax.swing.JFrame {
         titleJLabelAddGUI.setText("Add an Email");
         getContentPane().add(titleJLabelAddGUI, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 50, -1, -1));
 
-        jLabel1.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        jLabel1.setText("Email Address:");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
+        addressAddGUI.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        addressAddGUI.setText("Email Address");
+        getContentPane().add(addressAddGUI, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, -1, -1));
 
         addressJTextFieldAddingGUI.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         getContentPane().add(addressJTextFieldAddingGUI, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 570, 40));
 
-        jLabel2.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        jLabel2.setText("Password:");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, -1, -1));
+        passwordJLabelAddGUI.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        passwordJLabelAddGUI.setText("Password:");
+        getContentPane().add(passwordJLabelAddGUI, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, -1, -1));
 
-        jButton1.setText("jButton1");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, -1, -1));
+        saveJButtonAddGUI.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        saveJButtonAddGUI.setText("Save");
+        getContentPane().add(saveJButtonAddGUI, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        jLabel3.setText("Type:");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, -1, -1));
+        typeJLabelAddGUI.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        typeJLabelAddGUI.setText("Type:");
+        getContentPane().add(typeJLabelAddGUI, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, -1, -1));
 
         jPasswordField1.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         getContentPane().add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, 570, 40));
@@ -119,13 +120,13 @@ public class addGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel addressAddGUI;
     private javax.swing.JTextField addressJTextFieldAddingGUI;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
     private javax.swing.JPasswordField jPasswordField1;
+    private javax.swing.JLabel passwordJLabelAddGUI;
+    private javax.swing.JButton saveJButtonAddGUI;
     private javax.swing.JLabel titleJLabelAddGUI;
     private javax.swing.JComboBox<String> typeJComboBoxAddGUI;
+    private javax.swing.JLabel typeJLabelAddGUI;
     // End of variables declaration//GEN-END:variables
 }
