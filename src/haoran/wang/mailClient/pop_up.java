@@ -21,10 +21,11 @@ import javax.swing.JOptionPane;
  */
 public class pop_up
 {
-    
-    // This static method creates a pop-up window.
-    public static void infoBox(String titleBar, String infoMessage)
+    // Constructor
+    pop_up(String titleBar, String infoMessage)
     {
+        // This function will create a new pop-up window.
         JOptionPane.showMessageDialog(null, infoMessage, titleBar, 0);
     }
+    
 }

@@ -66,6 +66,11 @@ public class addGUI extends javax.swing.JFrame {
 
         saveJButtonAddGUI.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
         saveJButtonAddGUI.setText("Save");
+        saveJButtonAddGUI.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                saveJButtonAddGUIMouseClicked(evt);
+            }
+        });
         getContentPane().add(saveJButtonAddGUI, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, -1, -1));
 
         typeJLabelAddGUI.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
@@ -83,6 +88,14 @@ public class addGUI extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void saveJButtonAddGUIMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_saveJButtonAddGUIMouseClicked
+     //   data myData = new data();
+     //   myData.setName(addressJTextFieldAddingGUI.getText());
+       // myData.setPassword(jPasswordField1.getPassword());
+
+       new pop_up("Notification", "You have successfully added an email.");
+    }//GEN-LAST:event_saveJButtonAddGUIMouseClicked
 
     /**
      * @param args the command line arguments
