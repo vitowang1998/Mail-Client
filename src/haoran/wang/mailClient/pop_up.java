@@ -25,7 +25,15 @@ public class pop_up
     pop_up(String titleBar, String infoMessage)
     {
         // This function will create a new pop-up window.
-        JOptionPane.showMessageDialog(null, infoMessage, titleBar, 0);
+        // The last parameter for showMessageDialog function is the message type
+        // 0 ERROR
+        // 1 INFORMATION
+        // 2 WARNING
+        // 3 QUESTION
+        // 4 PLAIN
+        
+        // Display an information dialogue
+        JOptionPane.showMessageDialog(null, infoMessage, titleBar, 1);
     }
     
 }
