@@ -19,4 +19,8 @@ package haoran.wang.mailClient;
  */
 public class close {
     
+    close()
+    {
+        System.exit(0);
+    }
 }
