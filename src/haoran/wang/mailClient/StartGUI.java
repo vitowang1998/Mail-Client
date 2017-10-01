@@ -48,6 +48,11 @@ public class StartGUI extends javax.swing.JFrame {
         setMaximumSize(new java.awt.Dimension(630, 450));
         setMinimumSize(new java.awt.Dimension(630, 450));
         setResizable(false);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosing(java.awt.event.WindowEvent evt) {
+                formWindowClosing(evt);
+            }
+        });
 
         titileJLabelStartGUI.setFont(new java.awt.Font("Lucida Grande", 1, 48)); // NOI18N
         titileJLabelStartGUI.setText("Email Client");
@@ -138,6 +143,10 @@ public class StartGUI extends javax.swing.JFrame {
         new ManageGUI().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_manageStartGUIMouseClicked
+
+    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
+        new close();
+    }//GEN-LAST:event_formWindowClosing
 
     /**
      * @param args the command line arguments
