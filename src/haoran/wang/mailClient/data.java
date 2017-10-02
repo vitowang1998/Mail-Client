@@ -21,6 +21,10 @@ import java.util.ArrayList;
  */
 public class data 
 {
+    
+    int numOfData;
+    
+    
     // Instance Variables
     // Encapsulation
     private String userName;
@@ -28,7 +32,6 @@ public class data
     private String type;
 
     public data() {
-        this.Data = new ArrayList<data>();
         this.Data = new ArrayList<data>();
     }
     
