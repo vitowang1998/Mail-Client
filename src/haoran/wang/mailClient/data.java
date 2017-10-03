@@ -32,7 +32,11 @@ public class data
     private String type;
 
     public data() {
-        this.Data = new ArrayList<data>();
+        data data1 = new data();
+        data data2 = new data();
+        data data3 = new data();
+        data data4 = new data();
+        data data5 = new data();
     }
     
     // Setters
