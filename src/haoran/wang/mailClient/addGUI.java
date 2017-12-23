@@ -90,9 +90,15 @@ public class addGUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void saveJButtonAddGUIMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_saveJButtonAddGUIMouseClicked
-        
+        // pass the values to class "data"
+        data.store(addressJTextFieldAddingGUI.getText(), jPasswordField1.getText(), typeJComboBoxAddGUI.getSelectedItem().toString(), data.numOfEmail);
+
         // Create a pop-up window to notify the users that they have successfully added an email.
         new pop_up("Notification", "You have successfully added an email.");
+        
+        // Go back to the ManageGUI, close this GUI.
+        new ManageGUI().setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_saveJButtonAddGUIMouseClicked
 
     /**

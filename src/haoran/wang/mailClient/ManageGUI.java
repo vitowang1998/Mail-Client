@@ -25,6 +25,9 @@ public class ManageGUI extends javax.swing.JFrame {
      * Creates new form ManageGUI
      */
     public ManageGUI() {
+
+        
+        
         initComponents();
     }
 
@@ -64,11 +67,6 @@ public class ManageGUI extends javax.swing.JFrame {
         addJButtonManageGUI.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 addJButtonManageGUIMouseClicked(evt);
-            }
-        });
-        addJButtonManageGUI.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                addJButtonManageGUIKeyPressed(evt);
             }
         });
 
@@ -151,9 +149,9 @@ public class ManageGUI extends javax.swing.JFrame {
                         .addComponent(jButton6))
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton7)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton7))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(13, 13, 13)
@@ -176,10 +174,6 @@ public class ManageGUI extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void addJButtonManageGUIKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_addJButtonManageGUIKeyPressed
-        // Open a new GUI to add
-    }//GEN-LAST:event_addJButtonManageGUIKeyPressed
 
     private void addJButtonManageGUIMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_addJButtonManageGUIMouseClicked
         new addGUI().setVisible(true);

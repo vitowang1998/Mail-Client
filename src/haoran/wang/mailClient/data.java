@@ -13,7 +13,6 @@
  */
 package haoran.wang.mailClient;
 
-import java.util.ArrayList;
 
 /**
  *
@@ -21,9 +20,7 @@ import java.util.ArrayList;
  */
 public class data 
 {
-    
-    int numOfData;
-    
+    static int numOfEmail;
     
     // Instance Variables
     // Encapsulation
@@ -31,14 +28,6 @@ public class data
     private String password;
     private String type;
 
-    public data() {
-        data data1 = new data();
-        data data2 = new data();
-        data data3 = new data();
-        data data4 = new data();
-        data data5 = new data();
-    }
-    
     // Setters
     public void setName(String userName)
     {
@@ -66,14 +55,32 @@ public class data
         return password;
     }
     
-    public String type()
+    public String getType()
     {
         return type;
     }   
     
-    ArrayList Data;
     
-    
+    static void store(String name, String pass, String type, int index)
+    {
+        // first email
+        if (index == 0)
+        {
+            data data1 = new data();
+            data1.setName(name);
+            data1.setPassword(pass);
+            data1.setType(type);
+            numOfEmail = 1;
+            
+            System.out.println(data1.getName());
+            System.out.println(data1.getPassword());
+            System.out.print(data1.getType());
+            
+        }
+                // first email
+
+
+    }
     
     
 }
