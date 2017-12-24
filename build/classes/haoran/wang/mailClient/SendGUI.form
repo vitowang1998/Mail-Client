@@ -59,7 +59,7 @@
                   <Component id="toJLableSendGUI" min="-2" max="-2" attributes="0"/>
                   <Component id="toJFieldSendGUI" pref="564" max="32767" attributes="0"/>
                   <Component id="subjectJFieldSendGUI" alignment="0" max="32767" attributes="0"/>
-                  <Component id="emailJComboSendGUI" alignment="0" max="32767" attributes="0"/>
+                  <Component id="emailsComboBox" alignment="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace pref="45" max="32767" attributes="0"/>
           </Group>
@@ -75,7 +75,7 @@
               <EmptySpace max="-2" attributes="0"/>
               <Component id="fromJLabelSendGUI" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="emailJComboSendGUI" min="-2" max="-2" attributes="0"/>
+              <Component id="emailsComboBox" min="-2" max="-2" attributes="0"/>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="subjectJLableSendGUI" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
@@ -181,18 +181,13 @@
         </Property>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="emailJComboSendGUI">
+    <Component class="javax.swing.JComboBox" name="emailsComboBox">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Lucida Grande" size="18" style="0"/>
         </Property>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="4">
-            <StringItem index="0" value="Item 1"/>
-            <StringItem index="1" value="Item 2"/>
-            <StringItem index="2" value="Item 3"/>
-            <StringItem index="3" value="Item 4"/>
-          </StringArray>
+          <StringArray count="0"/>
         </Property>
       </Properties>
       <AuxValues>

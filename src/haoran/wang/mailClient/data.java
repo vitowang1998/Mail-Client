@@ -59,8 +59,14 @@ public class data
     {
         return type;
     }   
+   
     
-    
+    static String nameofEmail1;
+    static String nameofEmail2;
+    static String nameofEmail3;
+    static String nameofEmail4;
+    static String nameofEmail5;
+
     static void store(String name, String pass, String type, int index)
     {
         // first email
@@ -70,7 +76,7 @@ public class data
             data1.setName(name);
             data1.setPassword(pass);
             data1.setType(type);
-            ManageGUI.nameofEmail1 = data1.getName();
+            nameofEmail1 = data1.getName();
             numOfEmail = 1;    
         }
                 
@@ -81,7 +87,7 @@ public class data
             data2.setName(name);
             data2.setPassword(pass);
             data2.setType(type);
-            ManageGUI.nameofEmail2 = data2.getName();            
+            nameofEmail2 = data2.getName();            
             numOfEmail = 2;            
         }
 
@@ -92,7 +98,7 @@ public class data
             data3.setName(name);
             data3.setPassword(pass);
             data3.setType(type);
-            ManageGUI.nameofEmail3 = data3.getName();            
+            nameofEmail3 = data3.getName();            
             numOfEmail = 3;            
         }
 
@@ -103,7 +109,7 @@ public class data
             data4.setName(name);
             data4.setPassword(pass);
             data4.setType(type);
-            ManageGUI.nameofEmail4 = data4.getName();
+            nameofEmail4 = data4.getName();
             numOfEmail = 4;            
         }
 
@@ -114,7 +120,7 @@ public class data
             data5.setName(name);
             data5.setPassword(pass);
             data5.setType(type);
-            ManageGUI.nameofEmail5 = data5.getName();
+            nameofEmail5 = data5.getName();
             numOfEmail = 5;            
         }
         

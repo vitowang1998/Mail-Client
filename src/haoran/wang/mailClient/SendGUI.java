@@ -21,9 +21,37 @@ package haoran.wang.mailClient;
  */
 public class SendGUI extends javax.swing.JFrame {
 
+    final void initializeEmailComboBox()
+    {
+        switch(data.numOfEmail)
+        {
+            case 1: emailsComboBox.removeAllItems();
+                    emailsComboBox.addItem(data.nameofEmail1);
+            case 2: emailsComboBox.removeAllItems();
+                    emailsComboBox.addItem(data.nameofEmail1);
+                    emailsComboBox.addItem(data.nameofEmail2);
+            case 3: emailsComboBox.removeAllItems();
+                    emailsComboBox.addItem(data.nameofEmail1);
+                    emailsComboBox.addItem(data.nameofEmail2);
+                    emailsComboBox.addItem(data.nameofEmail3);
+            case 4: emailsComboBox.removeAllItems();
+                    emailsComboBox.addItem(data.nameofEmail1);
+                    emailsComboBox.addItem(data.nameofEmail2);
+                    emailsComboBox.addItem(data.nameofEmail3);
+                    emailsComboBox.addItem(data.nameofEmail4);
+            case 5: emailsComboBox.removeAllItems();
+                    emailsComboBox.addItem(data.nameofEmail1);
+                    emailsComboBox.addItem(data.nameofEmail2);
+                    emailsComboBox.addItem(data.nameofEmail3);
+                    emailsComboBox.addItem(data.nameofEmail4);
+                    emailsComboBox.addItem(data.nameofEmail5);
+        }
+    }
+    
     // Constructor
     public SendGUI() {
         initComponents();
+        initializeEmailComboBox();
     }
 
     /**
@@ -44,7 +72,7 @@ public class SendGUI extends javax.swing.JFrame {
         sendJButtonSendGUI = new javax.swing.JButton();
         fromJLabelSendGUI = new javax.swing.JLabel();
         subjectJFieldSendGUI = new javax.swing.JTextField();
-        emailJComboSendGUI = new javax.swing.JComboBox<>();
+        emailsComboBox = new javax.swing.JComboBox<>();
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
@@ -88,8 +116,7 @@ public class SendGUI extends javax.swing.JFrame {
 
         subjectJFieldSendGUI.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
 
-        emailJComboSendGUI.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        emailJComboSendGUI.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        emailsComboBox.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -109,7 +136,7 @@ public class SendGUI extends javax.swing.JFrame {
                     .addComponent(toJLableSendGUI)
                     .addComponent(toJFieldSendGUI, javax.swing.GroupLayout.DEFAULT_SIZE, 564, Short.MAX_VALUE)
                     .addComponent(subjectJFieldSendGUI)
-                    .addComponent(emailJComboSendGUI, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(emailsComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(45, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -122,7 +149,7 @@ public class SendGUI extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(fromJLabelSendGUI)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(emailJComboSendGUI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(emailsComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(subjectJLableSendGUI)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -188,7 +215,7 @@ public class SendGUI extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> emailJComboSendGUI;
+    private javax.swing.JComboBox<String> emailsComboBox;
     private javax.swing.JLabel fromJLabelSendGUI;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JScrollPane jScrollPane1;

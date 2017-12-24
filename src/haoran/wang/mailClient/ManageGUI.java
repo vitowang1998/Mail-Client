@@ -21,41 +21,36 @@ package haoran.wang.mailClient;
  */
 public class ManageGUI extends javax.swing.JFrame {
 
-    static String nameofEmail1;
-    static String nameofEmail2;
-    static String nameofEmail3;
-    static String nameofEmail4;
-    static String nameofEmail5;
-    
     
     final void initialize()
     {   
-        // you can make this recursive if you want
+        // you can make this recursive if you want 
+        // actually, you can make anything recursive if you want
         switch(data.numOfEmail)
         {
-            case 1: email1Label.setText(nameofEmail1);
+            case 1: email1Label.setText(data.nameofEmail1);
             case 2: 
             {
-                email1Label.setText(nameofEmail1);
-                email2Label.setText(nameofEmail2);
+                email1Label.setText(data.nameofEmail1);
+                email2Label.setText(data.nameofEmail2);
             }
             case 3:
             {
-                email1Label.setText(nameofEmail1);
-                email2Label.setText(nameofEmail2);
-                email3Label.setText(nameofEmail3);
+                email1Label.setText(data.nameofEmail1);
+                email2Label.setText(data.nameofEmail2);
+                email3Label.setText(data.nameofEmail3);
             }
             case 4:
-                email1Label.setText(nameofEmail1);
-                email2Label.setText(nameofEmail2);
-                email3Label.setText(nameofEmail3);
-                email4Label.setText(nameofEmail4);
+                email1Label.setText(data.nameofEmail1);
+                email2Label.setText(data.nameofEmail2);
+                email3Label.setText(data.nameofEmail3);
+                email4Label.setText(data.nameofEmail4);
             case 5: 
-                email1Label.setText(nameofEmail1);
-                email2Label.setText(nameofEmail2);
-                email3Label.setText(nameofEmail3);
-                email4Label.setText(nameofEmail4);
-                email5Label.setText(nameofEmail5);
+                email1Label.setText(data.nameofEmail1);
+                email2Label.setText(data.nameofEmail2);
+                email3Label.setText(data.nameofEmail3);
+                email4Label.setText(data.nameofEmail4);
+                email5Label.setText(data.nameofEmail5);
         }
         
     }
