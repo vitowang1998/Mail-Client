@@ -83,7 +83,7 @@ public class data
             numOfEmail = 2;            
         }
 
-        // second email
+        // third email
         if (index == 2)
         {
             data data3 = new data();
@@ -93,7 +93,7 @@ public class data
             numOfEmail = 3;            
         }
 
-        // second email
+        // fourth email
         if (index == 3)
         {
             data data4 = new data();
@@ -103,7 +103,7 @@ public class data
             numOfEmail = 4;            
         }
 
-        // second email
+        // fifth email
         if (index == 4)
         {
             data data5 = new data();
