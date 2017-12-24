@@ -46,22 +46,20 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="emailJComboSendGUI" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Component id="fromJLabelSendGUI" min="-2" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Group type="102" attributes="0">
-                          <Component id="returnJButtonSendGUI" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="32767" attributes="0"/>
-                          <Component id="sendJButtonSendGUI" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <Component id="jScrollPane1" pref="564" max="32767" attributes="0"/>
-                      <Component id="messageJLabelSendGUI" min="-2" max="-2" attributes="0"/>
-                      <Component id="subjectJLableSendGUI" min="-2" max="-2" attributes="0"/>
-                      <Component id="toJLableSendGUI" min="-2" max="-2" attributes="0"/>
-                      <Component id="toJFieldSendGUI" pref="564" max="32767" attributes="0"/>
-                      <Component id="subjectJFieldSendGUI" alignment="0" max="32767" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <Component id="returnJButtonSendGUI" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="sendJButtonSendGUI" min="-2" max="-2" attributes="0"/>
                   </Group>
+                  <Component id="jScrollPane1" pref="564" max="32767" attributes="0"/>
+                  <Component id="messageJLabelSendGUI" min="-2" max="-2" attributes="0"/>
+                  <Component id="subjectJLableSendGUI" min="-2" max="-2" attributes="0"/>
+                  <Component id="toJLableSendGUI" min="-2" max="-2" attributes="0"/>
+                  <Component id="toJFieldSendGUI" pref="564" max="32767" attributes="0"/>
+                  <Component id="subjectJFieldSendGUI" alignment="0" max="32767" attributes="0"/>
+                  <Component id="emailJComboSendGUI" alignment="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace pref="45" max="32767" attributes="0"/>
           </Group>

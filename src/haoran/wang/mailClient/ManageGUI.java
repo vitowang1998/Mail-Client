@@ -21,14 +21,56 @@ package haoran.wang.mailClient;
  */
 public class ManageGUI extends javax.swing.JFrame {
 
+    static String nameofEmail1;
+    static String nameofEmail2;
+    static String nameofEmail3;
+    static String nameofEmail4;
+    static String nameofEmail5;
+    
+    
+    final void initialize()
+    {   
+        // you can make this recursive if you want
+        switch(data.numOfEmail)
+        {
+            case 1: email1Label.setText(nameofEmail1);
+            case 2: 
+            {
+                email1Label.setText(nameofEmail1);
+                email2Label.setText(nameofEmail2);
+            }
+            case 3:
+            {
+                email1Label.setText(nameofEmail1);
+                email2Label.setText(nameofEmail2);
+                email3Label.setText(nameofEmail3);
+            }
+            case 4:
+                email1Label.setText(nameofEmail1);
+                email2Label.setText(nameofEmail2);
+                email3Label.setText(nameofEmail3);
+                email4Label.setText(nameofEmail4);
+            case 5: 
+                email1Label.setText(nameofEmail1);
+                email2Label.setText(nameofEmail2);
+                email3Label.setText(nameofEmail3);
+                email4Label.setText(nameofEmail4);
+                email5Label.setText(nameofEmail5);
+        }
+        
+    }
+    
+    
+    
+    
+    
+    
     /**
      * Creates new form ManageGUI
      */
     public ManageGUI() {
-
-        
-        
         initComponents();
+        initialize();
     }
 
     /**
@@ -43,16 +85,16 @@ public class ManageGUI extends javax.swing.JFrame {
         titleJLabelManageGUI = new javax.swing.JLabel();
         addJButtonManageGUI = new javax.swing.JButton();
         returnButton = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
+        email1Button = new javax.swing.JButton();
+        email2Button = new javax.swing.JButton();
+        email3Button = new javax.swing.JButton();
+        email4Button = new javax.swing.JButton();
+        email5Button = new javax.swing.JButton();
+        email1Label = new javax.swing.JLabel();
+        email2Label = new javax.swing.JLabel();
+        email3Label = new javax.swing.JLabel();
+        email4Label = new javax.swing.JLabel();
+        email5Label = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(630, 450));
@@ -78,30 +120,30 @@ public class ManageGUI extends javax.swing.JFrame {
             }
         });
 
-        jButton1.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        jButton1.setText("Email 1");
+        email1Button.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        email1Button.setText("Email 1");
 
-        jButton6.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        jButton6.setText("Email 2");
+        email2Button.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        email2Button.setText("Email 2");
 
-        jButton7.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        jButton7.setText("Email 3");
+        email3Button.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        email3Button.setText("Email 3");
 
-        jButton8.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        jButton8.setText("Email 4");
+        email4Button.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        email4Button.setText("Email 4");
 
-        jButton9.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
-        jButton9.setText("Email 5");
+        email5Button.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        email5Button.setText("Email 5");
 
-        jLabel1.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        email1Label.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
 
-        jLabel2.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        email2Label.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
 
-        jLabel3.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        email3Label.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
 
-        jLabel4.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        email4Label.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
 
-        jLabel5.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
+        email5Label.setFont(new java.awt.Font("Lucida Grande", 0, 18)); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -115,26 +157,26 @@ public class ManageGUI extends javax.swing.JFrame {
                 .addGap(56, 56, 56)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(returnButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(email1Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(email2Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(email3Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(email4Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(email5Button, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(57, 57, 57)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(email4Label, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(email3Label, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(email1Label, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(email2Label, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(email5Label, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(114, 114, 114))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                 .addComponent(addJButtonManageGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -149,26 +191,26 @@ public class ManageGUI extends javax.swing.JFrame {
                         .addComponent(titleJLabelManageGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(38, 38, 38)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton1))
+                            .addComponent(email1Label, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(email1Button))
                         .addGap(15, 15, 15)
-                        .addComponent(jButton6))
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(email2Button))
+                    .addComponent(email2Label, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton7))
+                    .addComponent(email3Label, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(email3Button))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(13, 13, 13)
-                        .addComponent(jButton8)
+                        .addComponent(email4Button)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton9))
+                        .addComponent(email5Button))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(14, 14, 14)
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(email4Label, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(email5Label, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(returnButton)
@@ -227,16 +269,16 @@ public class ManageGUI extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addJButtonManageGUI;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
+    private javax.swing.JButton email1Button;
+    private javax.swing.JLabel email1Label;
+    private javax.swing.JButton email2Button;
+    private javax.swing.JLabel email2Label;
+    private javax.swing.JButton email3Button;
+    private javax.swing.JLabel email3Label;
+    private javax.swing.JButton email4Button;
+    private javax.swing.JLabel email4Label;
+    private javax.swing.JButton email5Button;
+    private javax.swing.JLabel email5Label;
     private javax.swing.JButton returnButton;
     private javax.swing.JLabel titleJLabelManageGUI;
     // End of variables declaration//GEN-END:variables
