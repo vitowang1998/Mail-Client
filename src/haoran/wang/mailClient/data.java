@@ -70,16 +70,49 @@ public class data
             data1.setName(name);
             data1.setPassword(pass);
             data1.setType(type);
-            numOfEmail = 1;
-            
-            System.out.println(data1.getName());
-            System.out.println(data1.getPassword());
-            System.out.print(data1.getType());
-            
+            numOfEmail = 1;            
         }
-                // first email
+                
+        // second email
+        if (index == 1)
+        {
+            data data2 = new data();
+            data2.setName(name);
+            data2.setPassword(pass);
+            data2.setType(type);
+            numOfEmail = 2;            
+        }
 
+        // second email
+        if (index == 2)
+        {
+            data data3 = new data();
+            data3.setName(name);
+            data3.setPassword(pass);
+            data3.setType(type);
+            numOfEmail = 3;            
+        }
 
+        // second email
+        if (index == 3)
+        {
+            data data4 = new data();
+            data4.setName(name);
+            data4.setPassword(pass);
+            data4.setType(type);
+            numOfEmail = 4;            
+        }
+
+        // second email
+        if (index == 4)
+        {
+            data data5 = new data();
+            data5.setName(name);
+            data5.setPassword(pass);
+            data5.setType(type);
+            numOfEmail = 5;            
+        }
+        
     }
     
     
