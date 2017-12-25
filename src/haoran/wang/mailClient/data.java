@@ -21,7 +21,7 @@ package haoran.wang.mailClient;
 public class data 
 {
     static int numOfEmail;
-    
+        
     // Instance Variables
     // Encapsulation
     private String userName;
@@ -115,26 +115,5 @@ public class data
             email5.setType(type);
             numOfEmail = 5;            
         }
-    }
-    
-    
-    /*
-    static String getEmailName(int index)
-    {
-        switch(index)
-        {
-            case 1: return email1.getName();
-            case 2: return email2.getName();
-            case 3: return email3.getName();
-        }
-    }*/
-    
-    
-    
-    // invoked by close.java, store emails as objects in binary file
-    static void storeInFile()
-    {
-
-    }
-        
+    }       
 }

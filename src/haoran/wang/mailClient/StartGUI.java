@@ -13,6 +13,10 @@
  */
 package haoran.wang.mailClient;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+
 
 /**
  *
@@ -20,11 +24,30 @@ package haoran.wang.mailClient;
  */
 public class StartGUI extends javax.swing.JFrame {
 
+    void initialize()
+    {
+        String path = "/Users/HaoranWang/Documents/GitHub/Mail Client/data/data.bin";
+        try
+        {
+            FileInputStream FileIS = new FileInputStream(path);
+            ObjectInputStream is = new ObjectInputStream(FileIS);
+            data.numOfEmail = is.readInt();
+            System.out.println(data.numOfEmail);    
+        }
+        catch(IOException e)
+        {
+            e.printStackTrace();
+        }
+    }
+    
+    
+    
     /**
      * Creates new form StartGUI
      */
     public StartGUI() {
         initComponents();
+        //initialize();
     }
 
     /**
@@ -145,6 +168,7 @@ public class StartGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_manageStartGUIMouseClicked
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
+        // store the data and close the software
         new close();
     }//GEN-LAST:event_formWindowClosing
 

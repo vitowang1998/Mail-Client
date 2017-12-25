@@ -234,7 +234,7 @@ public class ManageGUI extends javax.swing.JFrame {
     }//GEN-LAST:event_returnButtonMouseClicked
 
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
-
+        new close();
     }//GEN-LAST:event_formWindowClosing
 
     /**

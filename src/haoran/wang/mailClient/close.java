@@ -23,58 +23,121 @@ import java.io.ObjectOutputStream;
  * @author HaoranWang
  */
 public class close {
-    // directory of the binary file
-    static final String path = "/Users/HaoranWang/Documents/GitHub/Mail Client/data/data.bin";
     
-    final void rewrite()
+    
+    static final void storeInFile()
     {
+        // directory of the binary file
+        String path = "/Users/HaoranWang/Documents/GitHub/Mail Client/data/data.bin";   
         try
         {
             FileOutputStream fileOS = new FileOutputStream(path);
             ObjectOutputStream os = new ObjectOutputStream(fileOS); 
+            // reset the binary file
             os.reset();
-            System.out.println("successfully reset");
-        }
-        catch(FileNotFoundException e){
-            new pop_up("Error", "Cannot find the storage file", 0);
-        }catch(IOException e)
-        {
-            e.printStackTrace();
-        }        
-    }
-
-    static final void storeNumber(int number)
-    {
-        try
-        {
-            FileOutputStream fileOS = new FileOutputStream(path);
-            ObjectOutputStream os = new ObjectOutputStream(fileOS); 
-            os.writeInt(number);
-            System.out.println(number);
+            // write the number of emails
+            os.writeInt(data.numOfEmail);
             System.out.println(data.numOfEmail);
-        }
-        catch(FileNotFoundException e){
-            new pop_up("Error", "Cannot find the storage file", 0);
-        }catch(IOException e)
-        {
-            e.printStackTrace();
-        }
-
-    }
-    
-    static final void storeEmail(data d)
-    {
-        String path = "/Users/HaoranWang/Documents/GitHub/Mail Client/data/data.bin";
-        try
-        {
-            FileOutputStream fileOS = new FileOutputStream(path);
-            ObjectOutputStream os = new ObjectOutputStream(fileOS);            
-            os.writeObject(d);
-            System.out.println(d.getName());
-            System.out.println(d.getPassword());
-            System.out.println(d.getType());
             
-
+            switch(data.numOfEmail)
+            {
+                case 1: 
+                {
+                    // 1st email
+                    os.writeChars(data.email1.getName());
+                    os.writeChars(data.email1.getPassword());
+                    os.writeChars(data.email1.getType());
+                }
+                case 2:
+                {
+                    // 1st email
+                    os.writeChars(data.email1.getName());
+                    os.writeChars(data.email1.getPassword());
+                    os.writeChars(data.email1.getType());
+                    // 2nd email
+                    os.writeChars(data.email2.getName());
+                    os.writeChars(data.email2.getPassword());
+                    os.writeChars(data.email2.getType());                    
+                }
+                case 3:
+                {
+                    // 1st email
+                    os.writeChars(data.email1.getName());
+                    os.writeChars(data.email1.getPassword());
+                    os.writeChars(data.email1.getType());
+                    // 2nd email
+                    os.writeChars(data.email2.getName());
+                    os.writeChars(data.email2.getPassword());
+                    os.writeChars(data.email2.getType());   
+                    // 3rd email
+                    os.writeChars(data.email3.getName());
+                    os.writeChars(data.email3.getPassword());
+                    os.writeChars(data.email3.getType());                      
+                }
+                case 4:
+                {
+                    // 1st email
+                    os.writeChars(data.email1.getName());
+                    os.writeChars(data.email1.getPassword());
+                    os.writeChars(data.email1.getType());
+                    // 2nd email
+                    os.writeChars(data.email2.getName());
+                    os.writeChars(data.email2.getPassword());
+                    os.writeChars(data.email2.getType());   
+                    // 3rd email
+                    os.writeChars(data.email3.getName());
+                    os.writeChars(data.email3.getPassword());
+                    os.writeChars(data.email3.getType());  
+                    // 4th email
+                    os.writeChars(data.email4.getName());
+                    os.writeChars(data.email4.getPassword());
+                    os.writeChars(data.email4.getType());                       
+                }
+                case 5:
+                {
+                    // 1st email
+                    os.writeChars(data.email1.getName());
+                    System.out.println(data.email1.getName());
+                    os.writeChars(data.email1.getPassword());
+                    System.out.println(data.email1.getPassword());
+                    os.writeChars(data.email1.getType());
+                    System.out.println(data.email1.getType());
+                    // 2nd email
+                    os.writeChars(data.email2.getName());
+                    System.out.println(data.email2.getName());
+                    os.writeChars(data.email2.getPassword());
+                    System.out.println(data.email2.getPassword());
+                    os.writeChars(data.email2.getType());
+                    System.out.println(data.email1.getType());
+                    // 3rd email
+                    os.writeChars(data.email3.getName());
+                    System.out.println(data.email3.getName());
+                    os.writeChars(data.email3.getPassword());
+                    System.out.println(data.email3.getPassword());
+                    os.writeChars(data.email3.getType());
+                    System.out.println(data.email1.getType());
+                    // 4th email
+                    os.writeChars(data.email4.getName());
+                    System.out.println(data.email4.getName());
+                    os.writeChars(data.email4.getPassword());
+                    System.out.println(data.email4.getPassword());
+                    os.writeChars(data.email4.getType()); 
+                    System.out.println(data.email1.getType());
+                    // 5th email
+                    os.writeChars(data.email5.getName());
+                    System.out.println(data.email5.getName());
+                    os.writeChars(data.email5.getPassword());
+                    System.out.println(data.email5.getPassword());
+                    os.writeChars(data.email5.getType()); 
+                    System.out.println(data.email1.getType());
+                }
+                       
+                
+            }
+            
+            
+            
+            os.close();
         }
         catch(FileNotFoundException e){
             new pop_up("Error", "Cannot find the storage file", 0);
@@ -82,18 +145,13 @@ public class close {
         {
             e.printStackTrace();
         }
-
     }
     
-    
-    
-    
-    
+
     
     close()
     {
-
-        
+        storeInFile();
         System.exit(0);
     }
 }
