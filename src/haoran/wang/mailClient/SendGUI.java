@@ -26,25 +26,25 @@ public class SendGUI extends javax.swing.JFrame {
         switch(data.numOfEmail)
         {
             case 1: emailsComboBox.removeAllItems();
-                    emailsComboBox.addItem(data.nameofEmail1);
+                    emailsComboBox.addItem(data.email1.getName());
             case 2: emailsComboBox.removeAllItems();
-                    emailsComboBox.addItem(data.nameofEmail1);
-                    emailsComboBox.addItem(data.nameofEmail2);
+                    emailsComboBox.addItem(data.email1.getName());
+                    emailsComboBox.addItem(data.email2.getName());
             case 3: emailsComboBox.removeAllItems();
-                    emailsComboBox.addItem(data.nameofEmail1);
-                    emailsComboBox.addItem(data.nameofEmail2);
-                    emailsComboBox.addItem(data.nameofEmail3);
+                    emailsComboBox.addItem(data.email1.getName());
+                    emailsComboBox.addItem(data.email2.getName());
+                    emailsComboBox.addItem(data.email3.getName());
             case 4: emailsComboBox.removeAllItems();
-                    emailsComboBox.addItem(data.nameofEmail1);
-                    emailsComboBox.addItem(data.nameofEmail2);
-                    emailsComboBox.addItem(data.nameofEmail3);
-                    emailsComboBox.addItem(data.nameofEmail4);
+                    emailsComboBox.addItem(data.email1.getName());
+                    emailsComboBox.addItem(data.email2.getName());
+                    emailsComboBox.addItem(data.email3.getName());
+                    emailsComboBox.addItem(data.email4.getName());
             case 5: emailsComboBox.removeAllItems();
-                    emailsComboBox.addItem(data.nameofEmail1);
-                    emailsComboBox.addItem(data.nameofEmail2);
-                    emailsComboBox.addItem(data.nameofEmail3);
-                    emailsComboBox.addItem(data.nameofEmail4);
-                    emailsComboBox.addItem(data.nameofEmail5);
+                    emailsComboBox.addItem(data.email1.getName());
+                    emailsComboBox.addItem(data.email2.getName());
+                    emailsComboBox.addItem(data.email3.getName());
+                    emailsComboBox.addItem(data.email4.getName());
+                    emailsComboBox.addItem(data.email5.getName());
         }
     }
     

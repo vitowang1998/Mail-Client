@@ -27,7 +27,7 @@ public class data
     private String userName;
     private String password;
     private String type;
-
+    
     // Setters
     public void setName(String userName)
     {
@@ -47,84 +47,94 @@ public class data
     // Getters
     public String getName()
     {
-        return userName;
+        return this.userName;
     }
     
     public String getPassword()
     {
-        return password;
+        return this.password;
     }
     
     public String getType()
     {
-        return type;
+        return this.type;
     }   
    
     
-    static String nameofEmail1;
-    static String nameofEmail2;
-    static String nameofEmail3;
-    static String nameofEmail4;
-    static String nameofEmail5;
+    static data email1 = new data();
+    static data email2 = new data();
+    static data email3 = new data();
+    static data email4 = new data();
+    static data email5 = new data();
+    
 
+    // invoked by addGUI, store emails as objects
     static void store(String name, String pass, String type, int index)
     {
         // first email
         if (index == 0)
-        {
-            data data1 = new data();
-            data1.setName(name);
-            data1.setPassword(pass);
-            data1.setType(type);
-            nameofEmail1 = data1.getName();
+        {      
+            email1.setName(name);
+            email1.setPassword(pass);
+            email1.setType(type);         
             numOfEmail = 1;    
         }
                 
         // second email
         if (index == 1)
         {
-            data data2 = new data();
-            data2.setName(name);
-            data2.setPassword(pass);
-            data2.setType(type);
-            nameofEmail2 = data2.getName();            
+            email2.setName(name);
+            email2.setPassword(pass);
+            email2.setType(type);
             numOfEmail = 2;            
         }
 
         // third email
         if (index == 2)
         {
-            data data3 = new data();
-            data3.setName(name);
-            data3.setPassword(pass);
-            data3.setType(type);
-            nameofEmail3 = data3.getName();            
+            email3.setName(name);
+            email3.setPassword(pass);
+            email3.setType(type);
             numOfEmail = 3;            
         }
 
         // fourth email
         if (index == 3)
         {
-            data data4 = new data();
-            data4.setName(name);
-            data4.setPassword(pass);
-            data4.setType(type);
-            nameofEmail4 = data4.getName();
+            email4.setName(name);
+            email4.setPassword(pass);
+            email4.setType(type);
             numOfEmail = 4;            
         }
 
         // fifth email
         if (index == 4)
         {
-            data data5 = new data();
-            data5.setName(name);
-            data5.setPassword(pass);
-            data5.setType(type);
-            nameofEmail5 = data5.getName();
+            email5.setName(name);
+            email5.setPassword(pass);
+            email5.setType(type);
             numOfEmail = 5;            
         }
-        
     }
     
+    
+    /*
+    static String getEmailName(int index)
+    {
+        switch(index)
+        {
+            case 1: return email1.getName();
+            case 2: return email2.getName();
+            case 3: return email3.getName();
+        }
+    }*/
+    
+    
+    
+    // invoked by close.java, store emails as objects in binary file
+    static void storeInFile()
+    {
+
+    }
         
 }

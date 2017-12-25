@@ -90,15 +90,25 @@ public class addGUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void saveJButtonAddGUIMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_saveJButtonAddGUIMouseClicked
-        // pass the values to class "data"
-        data.store(addressJTextFieldAddingGUI.getText(), jPasswordField1.getText(), typeJComboBoxAddGUI.getSelectedItem().toString(), data.numOfEmail);
+        // return an error if email address or password is empty
+        if(addressJTextFieldAddingGUI.getText().isEmpty() || jPasswordField1.getText().isEmpty())
+        {
+            new pop_up("Error", "Email address or password is empty.", 0);
 
+        }
+        else
+        {
+        // pass the values to class "data"         
+        data.store(addressJTextFieldAddingGUI.getText(), jPasswordField1.getText(), typeJComboBoxAddGUI.getSelectedItem().toString(), data.numOfEmail);
+        
         // Create a pop-up window to notify the users that they have successfully added an email.
-        new pop_up("Notification", "You have successfully added an email.");
+        new pop_up("Notification", "You have successfully added an email.", 1);
         
         // Go back to the ManageGUI, close this GUI.
         new ManageGUI().setVisible(true);
-        this.dispose();
+        this.dispose();           
+        }
+
     }//GEN-LAST:event_saveJButtonAddGUIMouseClicked
 
     /**

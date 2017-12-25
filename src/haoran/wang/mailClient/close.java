@@ -13,14 +13,87 @@
  */
 package haoran.wang.mailClient;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
+
 /**
  *
  * @author HaoranWang
  */
 public class close {
+    // directory of the binary file
+    static final String path = "/Users/HaoranWang/Documents/GitHub/Mail Client/data/data.bin";
+    
+    final void rewrite()
+    {
+        try
+        {
+            FileOutputStream fileOS = new FileOutputStream(path);
+            ObjectOutputStream os = new ObjectOutputStream(fileOS); 
+            os.reset();
+            System.out.println("successfully reset");
+        }
+        catch(FileNotFoundException e){
+            new pop_up("Error", "Cannot find the storage file", 0);
+        }catch(IOException e)
+        {
+            e.printStackTrace();
+        }        
+    }
+
+    static final void storeNumber(int number)
+    {
+        try
+        {
+            FileOutputStream fileOS = new FileOutputStream(path);
+            ObjectOutputStream os = new ObjectOutputStream(fileOS); 
+            os.writeInt(number);
+            System.out.println(number);
+            System.out.println(data.numOfEmail);
+        }
+        catch(FileNotFoundException e){
+            new pop_up("Error", "Cannot find the storage file", 0);
+        }catch(IOException e)
+        {
+            e.printStackTrace();
+        }
+
+    }
+    
+    static final void storeEmail(data d)
+    {
+        String path = "/Users/HaoranWang/Documents/GitHub/Mail Client/data/data.bin";
+        try
+        {
+            FileOutputStream fileOS = new FileOutputStream(path);
+            ObjectOutputStream os = new ObjectOutputStream(fileOS);            
+            os.writeObject(d);
+            System.out.println(d.getName());
+            System.out.println(d.getPassword());
+            System.out.println(d.getType());
+            
+
+        }
+        catch(FileNotFoundException e){
+            new pop_up("Error", "Cannot find the storage file", 0);
+        }catch(IOException e)
+        {
+            e.printStackTrace();
+        }
+
+    }
+    
+    
+    
+    
+    
     
     close()
     {
+
+        
         System.exit(0);
     }
 }

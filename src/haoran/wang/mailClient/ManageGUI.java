@@ -22,40 +22,45 @@ package haoran.wang.mailClient;
 public class ManageGUI extends javax.swing.JFrame {
 
     
-    final void initialize()
+    void initialize()
     {   
         // you can make this recursive if you want 
-        // actually, you can make anything recursive if you want
-        switch(data.numOfEmail)
+        // actually, you can make anything recursive if you want      
+        if (data.numOfEmail > 0)
         {
-            case 1: email1Label.setText(data.nameofEmail1);
-            case 2: 
-            {
-                email1Label.setText(data.nameofEmail1);
-                email2Label.setText(data.nameofEmail2);
-            }
-            case 3:
-            {
-                email1Label.setText(data.nameofEmail1);
-                email2Label.setText(data.nameofEmail2);
-                email3Label.setText(data.nameofEmail3);
-            }
-            case 4:
-                email1Label.setText(data.nameofEmail1);
-                email2Label.setText(data.nameofEmail2);
-                email3Label.setText(data.nameofEmail3);
-                email4Label.setText(data.nameofEmail4);
-            case 5: 
-                email1Label.setText(data.nameofEmail1);
-                email2Label.setText(data.nameofEmail2);
-                email3Label.setText(data.nameofEmail3);
-                email4Label.setText(data.nameofEmail4);
-                email5Label.setText(data.nameofEmail5);
-        }
+            switch(data.numOfEmail)
+            {        
+                case 1: email1Label.setText(data.email1.getName());
+                case 2: 
+                {
+                    email1Label.setText(data.email1.getName());
+                    email2Label.setText(data.email2.getName());
+                }
+                case 3:
+                {
+                    email1Label.setText(data.email1.getName());
+                    email2Label.setText(data.email2.getName());
+                    email3Label.setText(data.email3.getName());
+                }
+                case 4:
+                    email1Label.setText(data.email1.getName());
+                    email2Label.setText(data.email2.getName());
+                    email3Label.setText(data.email3.getName());
+                    email4Label.setText(data.email4.getName());
+                case 5: 
+                    email1Label.setText(data.email1.getName());
+                    email2Label.setText(data.email2.getName());
+                    email3Label.setText(data.email3.getName());
+                    email4Label.setText(data.email4.getName());
+                    email5Label.setText(data.email5.getName());
+            }            
+        }    
+        
+        
         
     }
     
-    
+
     
     
     
@@ -95,6 +100,11 @@ public class ManageGUI extends javax.swing.JFrame {
         setMaximumSize(new java.awt.Dimension(630, 450));
         setMinimumSize(new java.awt.Dimension(630, 450));
         setResizable(false);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosing(java.awt.event.WindowEvent evt) {
+                formWindowClosing(evt);
+            }
+        });
 
         titleJLabelManageGUI.setFont(new java.awt.Font("Lucida Grande", 0, 36)); // NOI18N
         titleJLabelManageGUI.setText("Manage Your Accounts");
@@ -163,19 +173,15 @@ public class ManageGUI extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addComponent(email4Label, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(email3Label, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(email3Label, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(email5Label, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(email1Label, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(email2Label, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(email5Label, javax.swing.GroupLayout.PREFERRED_SIZE, 289, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(114, 114, 114))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(addJButtonManageGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(105, 105, 105))))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 270, Short.MAX_VALUE)
+                        .addComponent(addJButtonManageGUI, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(105, 105, 105))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -197,16 +203,16 @@ public class ManageGUI extends javax.swing.JFrame {
                     .addComponent(email3Button))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(13, 13, 13)
-                        .addComponent(email4Button)
                         .addGap(18, 18, 18)
+                        .addComponent(email4Button)
+                        .addGap(13, 13, 13)
                         .addComponent(email5Button))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(14, 14, 14)
+                        .addGap(20, 20, 20)
                         .addComponent(email4Label, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(email5Label, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(returnButton)
                     .addComponent(addJButtonManageGUI))
@@ -226,6 +232,10 @@ public class ManageGUI extends javax.swing.JFrame {
         new StartGUI().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_returnButtonMouseClicked
+
+    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
+
+    }//GEN-LAST:event_formWindowClosing
 
     /**
      * @param args the command line arguments

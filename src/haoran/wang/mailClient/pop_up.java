@@ -22,7 +22,7 @@ import javax.swing.JOptionPane;
 public class pop_up
 {
     // Constructor
-    pop_up(String titleBar, String infoMessage)
+    pop_up(String titleBar, String infoMessage, int type)
     {
         // This function will create a new pop-up window.
         // The last parameter for showMessageDialog function is the message type
@@ -33,7 +33,7 @@ public class pop_up
         // 4 PLAIN
         
         // Display an information dialogue
-        JOptionPane.showMessageDialog(null, infoMessage, titleBar, 1);
+        JOptionPane.showMessageDialog(null, infoMessage, titleBar, type);
     }
     
 }
