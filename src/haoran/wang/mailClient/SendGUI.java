@@ -1,5 +1,5 @@
 /*
- * ® Copyright 2017 Haoran Wang. All rights reserved.
+ * ® Copyright 2017-2018 Haoran Wang. All rights reserved.
  *  
  * The works in this project are licenced under a 
  * Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported 
